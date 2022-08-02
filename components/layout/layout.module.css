@@ -1,0 +1,23 @@
+.layout {
+  position: relative;
+  background-color: #2c2330;
+  border-radius: 44px;
+  width: 1065px;
+  height: 623px;
+}
+
+.layout::after {
+  content: '';
+  position: absolute;
+  top: 21px;
+  width: 10px;
+  height: 10px;
+  left: 525px;
+  border-radius: 50%;
+  background-color: #d6b5ed;
+  border: 2px solid #4f0b7b;
+}
+
+.startPage::after {
+  border: 2px solid #26949a;
+}
