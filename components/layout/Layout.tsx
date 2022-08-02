@@ -1,3 +1,4 @@
+import Footer from '../elements/footer/Footer'
 import { getClassNames } from '../Tablet'
 import styles from './layout.module.css'
 
