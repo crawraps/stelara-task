@@ -1,8 +1,9 @@
+import Tablet from '../components/Tablet'
 import styles from '../styles/Home.module.css'
 
 export default function Home(): JSX.Element {
   return (
-    <>
+    <div className={styles['container']}>
       <div className={styles['heading']}>
         <div className={styles['heading-h']}>
           <h1>Выбираем оптимальную терапию</h1>
@@ -13,6 +14,7 @@ export default function Home(): JSX.Element {
           терапию, учитывая жалобы и анамнез заболевания.
         </p>
       </div>
-    </>
+      <Tablet />
+    </div>
   )
 }
