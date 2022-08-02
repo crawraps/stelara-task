@@ -4,14 +4,19 @@
   border-radius: 44px;
   width: 79.2%;
   aspect-ratio: 1065 / 623;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 41px 50px 41px 55px;
 }
 
 .layout::after {
+  box-sizing: border-box;
   content: '';
   position: absolute;
   top: 21px;
-  width: 10px;
-  height: 10px;
+  width: 10.4px;
+  height: 10.4px;
   left: calc(50% - 7.5px);
   border-radius: 50%;
   background-color: #d6b5ed;
@@ -20,4 +25,11 @@
 
 .startPage::after {
   border: 2px solid #26949a;
+}
+
+.navigation {
+  position: absolute;
+  width: calc(100% - 105px);
+  display: flex;
+  justify-content: space-between;
 }

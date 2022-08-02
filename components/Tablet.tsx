@@ -1,4 +1,5 @@
 import React from 'react'
+import Background from './elements/background/Background'
 import Layout from './layout/Layout'
 
 export default function Tablet(): JSX.Element {
@@ -8,12 +9,16 @@ export default function Tablet(): JSX.Element {
     setCurrentPage(currentPage + 1)
   }
   const prevPage = (): void => {
-    if (currentPage < 0) setCurrentPage(currentPage - 1)
+    if (!(currentPage < 0)) setCurrentPage(currentPage - 1)
   }
 
   return (
-    <Layout startPage={true}>
-      <div></div>
+    <Layout
+      startPage={currentPage === 0}
+      nextPage={nextPage}
+      prevPage={prevPage}
+    >
+      <Background page={currentPage} />
     </Layout>
   )
 }
