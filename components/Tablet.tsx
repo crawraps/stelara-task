@@ -1,6 +1,16 @@
+import React from 'react'
 import Layout from './layout/Layout'
 
 export default function Tablet(): JSX.Element {
+  const [currentPage, setCurrentPage] = React.useState<number>(0)
+
+  const nextPage = (): void => {
+    setCurrentPage(currentPage + 1)
+  }
+  const prevPage = (): void => {
+    if (currentPage < 0) setCurrentPage(currentPage - 1)
+  }
+
   return (
     <Layout startPage={true}>
       <div></div>
