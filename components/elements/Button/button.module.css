@@ -1,0 +1,22 @@
+.button {
+  background-color: #fecd2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4f0b7b;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 15px;
+  padding: 17px 60px;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .button {
+    border-radius: 10px;
+  }
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import Background from './elements/background/Background'
 import Layout from './layout/Layout'
+import StartPage from './pages/start/StartPage'
 
 export default function Tablet(): JSX.Element {
   const [currentPage, setCurrentPage] = React.useState<number>(0)
@@ -9,16 +10,16 @@ export default function Tablet(): JSX.Element {
     setCurrentPage(currentPage + 1)
   }
   const prevPage = (): void => {
-    if (!(currentPage < 0)) setCurrentPage(currentPage - 1)
+    if (currentPage === 0) return
+    setCurrentPage(currentPage - 1)
   }
 
+  const slides = [<StartPage onClick={nextPage} />]
+
   return (
-    <Layout
-      startPage={currentPage === 0}
-      nextPage={nextPage}
-      prevPage={prevPage}
-    >
+    <Layout page={currentPage} nextPage={nextPage} prevPage={prevPage}>
       <Background page={currentPage} />
+      {slides[currentPage]}
     </Layout>
   )
 }

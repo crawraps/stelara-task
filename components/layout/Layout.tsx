@@ -3,14 +3,14 @@ import { getClassNames } from '../Tablet'
 import styles from './layout.module.css'
 
 interface Props {
-  startPage: boolean
+  page: number
   nextPage: () => void
   prevPage: () => void
-  children: JSX.Element
+  children: JSX.Element | JSX.Element[]
 }
 
 export default function Layout({
-  startPage,
+  page,
   children,
   nextPage,
   prevPage,
@@ -18,15 +18,16 @@ export default function Layout({
   return (
     <div
       className={getClassNames(
-        `layout ${startPage ? 'startPage' : ''}`,
+        `layout ${page === 0 ? 'startPage' : ''}`,
         styles
       )}
     >
-      {children}
-
-      <div className={getClassNames('navigation', styles)}>
-        <SliderPrev onClick={prevPage} />
-        <SliderNext onClick={nextPage} />
+      <div className={getClassNames('container', styles)}>
+        {children}
+        <div className={getClassNames('navigation', styles)}>
+          <SliderPrev onClick={prevPage} />
+          <SliderNext onClick={nextPage} />
+        </div>
       </div>
     </div>
   )
