@@ -1,0 +1,26 @@
+.page {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  aspect-ratio: 960 / 540;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .page {
+    aspect-ratio: unset;
+  }
+
+  .image {
+    overflow: hidden;
+    width: 183px !important;
+    height: 183px;
+    border-radius: 50%;
+  }
+}

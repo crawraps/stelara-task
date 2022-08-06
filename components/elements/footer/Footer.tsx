@@ -1,11 +1,10 @@
 import { CSSProperties } from 'react'
-import { getClassNames } from '../../Tablet'
 import styles from './footer.module.css'
 
 interface Props {
   codeStyle?: CSSProperties
   textStyle?: CSSProperties
-  children: string
+  children: React.ReactNode
 }
 
 export default function Footer({
@@ -14,7 +13,7 @@ export default function Footer({
   children,
 }: Props): JSX.Element {
   return (
-    <div className={getClassNames('footer', styles)}>
+    <div className={styles.footer}>
       <p style={textStyle}>{children}</p>
       <span style={codeStyle}>СР-330488</span>
     </div>

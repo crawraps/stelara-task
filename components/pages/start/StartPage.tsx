@@ -1,5 +1,5 @@
 import Button from 'components/elements/Button/Button'
-import { getClassNames } from '../../Tablet'
+import { useClass } from '../../Tablet'
 import styles from './start.module.css'
 
 interface Props {
@@ -7,5 +7,6 @@ interface Props {
 }
 
 export default function StartPage({ onClick }: Props): JSX.Element {
-  return <div className={getClassNames('page', styles)} onClick={onClick} />
+  const getClass = useClass(styles)
+  return <div className={getClass('page')} onClick={onClick} />
 }

@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  font-weight: 600;
+  border-radius: 7px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #532f88;
+}
+
+.container span {
+  color: #fecd2f;
+}
+
+.answer {
+  border: 1px solid #67656a;
+  position: relative;
+  border-radius: 21px;
+  font-weight: 600;
+  height: 56px;
+  width: 84.87%;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #67656a;
+  background-color: transparent;
+  text-align: left;
+  padding-left: 56px;
+  cursor: pointer;
+}
+.answer::after {
+  position: absolute;
+  content: attr(data-number);
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #67656a;
+  top: -4px;
+  left: -10px;
+  background-color: white;
+}
+
+.choosed {
+  background-color: #c5c5c5;
+}
+.choosed::after {
+  background-color: #c5c5c5;
+}
+
+.correct {
+  background-color: #44babe;
+  color: white;
+}
+.correct::after {
+  background-color: #44babe;
+  content: '';
+  background-image: url('../../../assets/correctIcon.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wrong {
+  background-color: #fc367a;
+  color: white;
+}
+.wrong::after {
+  background-color: #fc367a;
+  content: '';
+  background-image: url('../../../assets/wrongIcon.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}

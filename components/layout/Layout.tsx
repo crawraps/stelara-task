@@ -1,5 +1,5 @@
 import { SliderNext, SliderPrev } from '../elements/sliderButtons/SliderButton'
-import { getClassNames } from '../Tablet'
+import { useClass } from '../Tablet'
 import styles from './layout.module.css'
 
 interface Props {
@@ -15,16 +15,12 @@ export default function Layout({
   nextPage,
   prevPage,
 }: Props): JSX.Element {
+  const getClass = useClass(styles)
   return (
-    <div
-      className={getClassNames(
-        `layout ${page === 0 ? 'startPage' : ''}`,
-        styles
-      )}
-    >
-      <div className={getClassNames('container', styles)}>
+    <div className={getClass(`layout ${page === 0 ? 'startPage' : ''}`)}>
+      <div className={getClass('container')}>
         {children}
-        <div className={getClassNames('navigation', styles)}>
+        <div className={getClass('navigation')}>
           <SliderPrev onClick={prevPage} />
           <SliderNext onClick={nextPage} />
         </div>

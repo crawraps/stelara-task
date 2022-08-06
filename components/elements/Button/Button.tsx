@@ -1,12 +1,11 @@
-import { getClassNames } from 'components/Tablet'
 import React from 'react'
 import styles from './button.module.css'
 
 interface Props {
   title: string
   style?: React.CSSProperties
-  className: string
-  onClick(): void
+  className?: string
+  onClick?(): void
 }
 
 export default function Button({
@@ -17,7 +16,7 @@ export default function Button({
 }: Props): JSX.Element {
   return (
     <button
-      className={getClassNames('button', styles) + ' ' + className}
+      className={styles.button + ' ' + className}
       style={style}
       onClick={onClick}
     >
