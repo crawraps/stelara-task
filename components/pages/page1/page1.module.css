@@ -63,6 +63,15 @@
   display: none;
 }
 
+.page-1 .footer-text {
+  margin-left: 22px;
+  margin-bottom: 12px;
+}
+.page-1 .footer-code {
+  margin-right: 7px;
+  margin-bottom: 11px;
+}
+
 @media screen and (max-width: 600px) {
   .page-1 {
     width: 100%;
@@ -105,5 +114,14 @@
     padding: 10px 52px;
     display: block;
     margin-bottom: 108px;
+  }
+
+  .page-1 .footer-text {
+    margin-left: 16px;
+    margin-bottom: 62px;
+  }
+  .page-1 .footer-code {
+    margin-right: 15px;
+    margin-bottom: 81px;
   }
 }

@@ -6,6 +6,7 @@ import styles from './quiz.module.css'
 interface Props {
   heading: string
   mobileHeading: string
+  next(): void
   quest: Quest
   questNumber: number
   className?: string
@@ -34,10 +35,12 @@ export default function Quiz(props: Props): JSX.Element {
 
   const [viewed, setViewed] = React.useState<boolean[]>(choosed)
   const submit = () => {
+    if (choosed.every(el => !el)) return
     setViewed(choosed)
     props.setAns(
       choosed.map((c, i) => (c ? i : null)).filter(c => !c) as number[]
     )
+    props.next()
   }
 
   const [isMobile, setIsMobile] = React.useState(window.innerWidth < 600)

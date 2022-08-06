@@ -16,6 +16,15 @@
   margin-top: 28px;
 }
 
+.page2 .footer-text {
+  margin-left: 33px;
+  margin-bottom: 9px;
+}
+.page2 .footer-code {
+  margin-right: 9px;
+  margin-bottom: 9px;
+}
+
 @media screen and (max-width: 600px) {
   .page2 .quiz {
     width: 100%;
@@ -57,5 +66,14 @@
     line-height: 15px;
     padding: 10px 41px 10px 40px;
     margin-bottom: 74px;
+  }
+
+  .page2 .footer-text {
+    margin-left: 22px;
+    margin-bottom: 48px;
+  }
+  .page2 .footer-code {
+    margin-right: 24px;
+    margin-bottom: 48px;
   }
 }

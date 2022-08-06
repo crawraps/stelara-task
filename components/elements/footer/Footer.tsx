@@ -2,20 +2,20 @@ import { CSSProperties } from 'react'
 import styles from './footer.module.css'
 
 interface Props {
-  codeStyle?: CSSProperties
-  textStyle?: CSSProperties
+  codeClass?: string
+  textClass?: string
   children: React.ReactNode
 }
 
 export default function Footer({
-  codeStyle = {},
-  textStyle = {},
+  codeClass,
+  textClass,
   children,
 }: Props): JSX.Element {
   return (
     <div className={styles.footer}>
-      <p style={textStyle}>{children}</p>
-      <span style={codeStyle}>СР-330488</span>
+      <p className={textClass + ' ' + styles.text}>{children}</p>
+      <span className={codeClass + ' ' + styles.code}>СР-330488</span>
     </div>
   )
 }

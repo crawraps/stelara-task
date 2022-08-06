@@ -1,4 +1,3 @@
-import ImagePage from '../../pages/image/ImagePage'
 import man1 from 'assets/man-1.png'
 import Button from '../../elements/Button/Button'
 import Footer from '../../elements/footer/Footer'
@@ -6,6 +5,7 @@ import { useClass } from 'components/Tablet'
 import styles from './page1.module.css'
 import List from 'components/elements/list/List'
 import ListItem from 'components/elements/list/ListItem'
+import Page from '../image/Page'
 
 export interface PageProps {
   next(): void
@@ -15,7 +15,7 @@ export interface PageProps {
 export default function Page1({ next, getGlobClass }: PageProps) {
   const getClass = useClass(styles)
   return (
-    <ImagePage src={man1} imageWidth={39.21} imageClass={getClass('image')}>
+    <Page image src={man1} imageWidth={39.21} imageClass={getClass('image')}>
       <div className={getClass('page-1') + ' ' + getGlobClass('content')}>
         <h1 className={getGlobClass('heading')}>
           {`
@@ -91,8 +91,8 @@ export default function Page1({ next, getGlobClass }: PageProps) {
         <Button title='далее' onClick={next} className={getClass('button')} />
       </div>
       <Footer
-        textStyle={{ marginBottom: 12, marginLeft: 22, width: '57.29%' }}
-        codeStyle={{ marginRight: 7, marginBottom: 11 }}
+        textClass={getClass('footer-text')}
+        codeClass={getClass('footer-code')}
       >
         *Гипотетический пациент
         <br />
@@ -100,6 +100,6 @@ export default function Page1({ next, getGlobClass }: PageProps) {
         фактора некроза опухоли альфа, ГКС – глюкокортикостероиды, СРБ –
         С-реактивный белок
       </Footer>
-    </ImagePage>
+    </Page>
   )
 }
