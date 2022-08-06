@@ -80,7 +80,11 @@ export default function Quiz(props: Props): JSX.Element {
           {ans}
         </button>
       ))}
-      <Button title='ответить' onClick={submit} className={props.buttonClass} />
+      <Button
+        title={choosedDefault.every(item => !item) ? 'Ответить' : 'Далее'}
+        onClick={submit}
+        className={props.buttonClass}
+      />
     </div>
   )
 }

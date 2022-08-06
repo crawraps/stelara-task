@@ -63,11 +63,12 @@
   display: none;
 }
 
-.page-1 .footer-text {
+.footer-text {
   margin-left: 22px;
   margin-bottom: 12px;
+  width: 57.29%;
 }
-.page-1 .footer-code {
+.footer-code {
   margin-right: 7px;
   margin-bottom: 11px;
 }
@@ -116,11 +117,12 @@
     margin-bottom: 108px;
   }
 
-  .page-1 .footer-text {
+  .footer-text {
     margin-left: 16px;
     margin-bottom: 62px;
+    width: 75.93%;
   }
-  .page-1 .footer-code {
+  .footer-code {
     margin-right: 15px;
     margin-bottom: 81px;
   }
