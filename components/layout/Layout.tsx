@@ -20,10 +20,10 @@ export default function Layout({
     <div className={getClass(`layout ${page === 0 ? 'startPage' : ''}`)}>
       <div className={getClass('container')}>
         {children}
-        <div className={getClass('navigation')}>
+        {/* <div className={getClass('navigation')}>
           <SliderPrev onClick={prevPage} />
           <SliderNext onClick={nextPage} />
-        </div>
+        </div> */}
       </div>
     </div>
   )

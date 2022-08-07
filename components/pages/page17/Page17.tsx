@@ -5,8 +5,13 @@ import { PageProps } from '../page1/Page1'
 import styles from './page17.module.css'
 import TableDesktop from '/assets/table-desktop.svg'
 import TableMobile from '/assets/table-mobile.svg'
+import ArrowLeft from '/assets/slider-prev.svg'
 
-export default function Page17({ isMobile }: PageProps): JSX.Element {
+interface Props extends PageProps {
+  prev(): void
+}
+
+export default function Page17(props: Props): JSX.Element {
   return (
     <Page className={styles['page-17']}>
       <div className={styles.content}>
@@ -50,7 +55,11 @@ export default function Page17({ isMobile }: PageProps): JSX.Element {
           Стелара в дозе, рассчитанной на основании массы тела (Таблица 1).
         </p>
 
-        {isMobile ? <TableMobile /> : <TableDesktop className={styles.table} />}
+        {props.isMobile ? (
+          <TableMobile />
+        ) : (
+          <TableDesktop className={styles.table} />
+        )}
 
         <p>
           Через 8 недель после введения инициирующей дозы препарат Стелара
@@ -119,6 +128,9 @@ export default function Page17({ isMobile }: PageProps): JSX.Element {
         </p>
       </div>
       <FooterLast />
+      <div className={styles['arrow-container']} onClick={props.prev}>
+        <ArrowLeft />
+      </div>
     </Page>
   )
 }

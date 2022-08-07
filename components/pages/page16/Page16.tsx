@@ -1,8 +1,10 @@
 import FooterLast from 'components/elements/footer-last/FooterLast'
 import Page from '../page/Page'
+import { PageProps } from '../page1/Page1'
 import styles from './page16.module.css'
+import ArrowRight from '/assets/slider-next.svg'
 
-export default function Page16(): JSX.Element {
+export default function Page16(props: PageProps): JSX.Element {
   return (
     <Page className={styles['page-16']}>
       <div className={styles.content}>
@@ -155,6 +157,9 @@ export default function Page16(): JSX.Element {
         </p>
       </div>
       <FooterLast />
+      <div className={styles['arrow-container']} onClick={props.next}>
+        <ArrowRight />
+      </div>
     </Page>
   )
 }

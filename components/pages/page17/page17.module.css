@@ -31,6 +31,18 @@
   font-weight: 600;
 }
 
+.arrow-container {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: calc(50% - 1.5rem);
+  left: 9px;
+}
+.arrow-container svg {
+  width: 0.5625rem;
+  height: 3rem;
+}
+
 @media screen and (max-width: 600px) {
   .content {
     padding: 30px 14px 0 22px;

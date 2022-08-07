@@ -76,8 +76,8 @@ export default function Tablet(): JSX.Element {
     <Page13 {...pageAttrs} />,
     <Page14 {...pageAttrs} />,
     <Page15 {...pageAttrs} />,
-    <Page16 />,
-    <Page17 {...pageAttrs} />,
+    <Page16 {...pageAttrs} />,
+    <Page17 {...pageAttrs} prev={prevPage} />,
   ]
 
   return (
