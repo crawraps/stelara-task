@@ -19,13 +19,9 @@ interface Props {
 
 export default function Quiz(props: Props): JSX.Element {
   const getClass = useClass(styles)
-
-  const choosedDefault = new Array(props.quest.answers.length).fill(false)
-  if (props.ans.length !== 0) {
-    props.ans.forEach(a => (choosedDefault[a] = true))
-  }
-
-  const [choosed, setChoosed] = React.useState<boolean[]>(choosedDefault)
+  const [choosed, setChoosed] = React.useState<boolean[]>(
+    new Array(props.quest.answers.length).fill(false)
+  )
   const toggleChoose = (i: number) => {
     if (props.ans.length !== 0) return
     const arr = [...choosed]
@@ -33,18 +29,13 @@ export default function Quiz(props: Props): JSX.Element {
     setChoosed(arr)
   }
 
+  const [submited, setSubmited] = React.useState(false)
+
   const [viewed, setViewed] = React.useState<boolean[]>(choosed)
   const submit = () => {
     if (choosed.every(el => !el)) return
     setViewed(choosed)
-    props.setAns(
-      choosed.map((c, i) => (c ? i : null)).filter(c => !c) as number[]
-    )
-    if (choosedDefault.every(item => !item)) {
-      setTimeout(() => props.next(), 500)
-    } else {
-      props.next()
-    }
+    setSubmited(true)
   }
 
   const [isMobile, setIsMobile] = React.useState(window.innerWidth < 600)
@@ -79,14 +70,14 @@ export default function Quiz(props: Props): JSX.Element {
           }
           key={ans}
           data-number={index + 1}
-          onClick={() => toggleChoose(index)}
+          onClick={() => (submited ? null : toggleChoose(index))}
         >
           {ans}
         </button>
       ))}
       <Button
-        title={choosedDefault.every(item => !item) ? 'Ответить' : 'Далее'}
-        onClick={submit}
+        title={submited ? 'Далее' : 'Ответить'}
+        onClick={submited ? props.next : submit}
         className={props.buttonClass}
       />
     </div>
