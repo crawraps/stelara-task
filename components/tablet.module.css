@@ -7,7 +7,6 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  text-transform: uppercase;
   display: block;
   color: #ffffff;
   background: #532f88;
@@ -20,6 +19,35 @@
   background-color: #eae2f4;
   border-radius: 15px;
 }
+.purple-block ul {
+  list-style: none;
+  padding-left: 1.2rem;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #532f88;
+}
+.purple-block li::before {
+  position: absolute;
+  content: '\2022';
+  color: inherit;
+  margin-left: -0.8rem;
+}
+.purple-block p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #532f88;
+}
+
+.green-block {
+  background: #03b7bf;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}
 
 @media screen and (max-width: 600px) {
   .heading {
@@ -27,6 +55,5 @@
     font-size: 13px;
     line-height: 15px;
     text-align: center;
-    text-transform: uppercase;
   }
 }

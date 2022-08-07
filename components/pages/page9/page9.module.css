@@ -1,0 +1,163 @@
+.page-9 {
+  flex-direction: column;
+  align-items: center;
+}
+
+.pre-heading {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #4f0b7b;
+  margin: 31px 75px 17px;
+}
+
+.blocks {
+  margin: 0 33px 0 27px;
+  display: flex;
+}
+
+.block {
+  margin: 0 5px;
+  background: #dbcfed;
+  border-radius: 15px;
+}
+
+.block-1 {
+  padding: 14px 11px 0 25px;
+}
+.block-2 {
+  padding: 14px 18px 0px 22px;
+}
+
+.block-heading h1 {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #532f88;
+}
+
+.page-9 b {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #532f88;
+}
+
+.button {
+  padding: 14px 60px 17px 59px;
+  margin-top: 34px;
+  align-self: flex-end;
+  margin-right: 22px;
+}
+
+.footer-code {
+  margin-right: 5px;
+  margin-bottom: 11px;
+}
+.footer-text {
+  margin-left: 21px;
+  margin-bottom: 3px;
+  width: 74.79%;
+}
+
+@media screen and (max-width: 600px) {
+  .page-9 {
+    padding: 0 12px 0 18px;
+  }
+
+  .pre-heading {
+    font-size: 13px;
+    line-height: 15px;
+    margin: 0px;
+    margin-top: 54px;
+    text-align: center;
+    widows: 100%;
+    margin-bottom: 5px;
+  }
+
+  .blocks {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .block {
+    width: 100%;
+    margin: 10px 0;
+    padding-left: 11px;
+    padding-right: 16px;
+    padding-top: 0;
+  }
+
+  .button {
+    margin-top: 39px;
+    align-self: center;
+  }
+
+  .block-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 17px;
+    width: 100%;
+    min-height: 59px;
+  }
+
+  .block-heading h1 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration-line: underline;
+    width: 70%;
+  }
+
+  .block ul {
+    margin-top: 0;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .block ul li {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .block ul li b {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: #532f88;
+  }
+
+  .block-button {
+    width: 34px;
+    height: 34px;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+  }
+  .reversed {
+    transform: scale(-1, -1);
+  }
+
+  .button {
+    padding: 10px 52px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    align-self: center;
+    margin-bottom: 140px;
+  }
+
+  .footer-text {
+    margin-bottom: 20px;
+    margin-left: 19px;
+    width: 231px;
+  }
+  .footer-code {
+    margin-left: 14px;
+    margin-bottom: 71px;
+  }
+}

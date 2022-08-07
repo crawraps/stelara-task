@@ -69,6 +69,7 @@
 .correct {
   background-color: #44babe;
   color: white;
+  font-weight: 600;
 }
 .correct::after {
   background-color: #44babe;
@@ -82,6 +83,7 @@
 .wrong {
   background-color: #fc367a;
   color: white;
+  font-weight: 400;
 }
 .wrong::after {
   background-color: #fc367a;

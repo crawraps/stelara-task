@@ -1,0 +1,83 @@
+.page7 .quiz {
+  width: 59.9%;
+}
+
+.page7 .heading {
+  margin: 23px 13px 51px 22px;
+  padding: 16px 31px 17px 37px;
+}
+
+.page7 .answer {
+  padding-left: 75px;
+  padding-right: 90px;
+  margin: 8px 0;
+  margin-left: 45px;
+}
+
+.page7 .button {
+  margin-top: 31px;
+}
+
+.footer-text {
+  margin-left: 33px;
+  margin-bottom: 9px;
+  width: 55.31%;
+}
+.footer-code {
+  margin-bottom: 11px;
+  margin-right: 5px;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .page7 .quiz {
+    width: 100%;
+    padding: 0 24px 0 20px;
+  }
+
+  .page7 .image {
+    right: 68px;
+    top: 22px;
+  }
+
+  .page7 .heading {
+    margin: 215px 0 16px 0;
+    font-weight: 600;
+    width: 276px;
+    padding: 6px 15px 9px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .page7 .answer {
+    margin: 6px 0;
+    font-size: 10px;
+    line-height: 12px;
+    padding-left: 60px;
+    padding-right: 0;
+  }
+
+  .page7 .button {
+    padding: 10px 40px 10px 41px;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 10px 40px 92px 41px;
+    margin-top: 14px;
+  }
+
+  .footer-text {
+    margin-left: 25px;
+    margin-bottom: 49px;
+    font-size: 6px;
+    line-height: 8px;
+    width: 194px;
+  }
+
+  .footer-code {
+    color: #838383;
+    font-size: 6px;
+    line-height: 8px;
+    margin-right: 20px;
+    margin-bottom: 62px;
+  }
+}

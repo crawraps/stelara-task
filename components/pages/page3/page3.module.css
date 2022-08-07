@@ -1,0 +1,95 @@
+.page-3 {
+  flex-direction: column;
+  align-items: center;
+}
+
+.blocks {
+  width: 79.79%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-3 .heading {
+  margin: 20px 0 18px 0;
+  width: 69.53%;
+  text-transform: none;
+  text-align: center;
+}
+
+.purple-block {
+  padding: 15px 22px 6px 17px;
+  margin-bottom: 10px;
+}
+
+.block p {
+  font-size: 15px;
+  line-height: 18px;
+  margin: 0;
+}
+
+.page-3 ul {
+  margin-top: 0;
+}
+
+.green-block {
+  padding: 13px 16px 14px;
+}
+
+.footer-text {
+  width: 73.65%;
+  margin-left: 26px;
+  margin-bottom: 6px;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+}
+.footer-code {
+  margin-right: 9px;
+  margin-bottom: 11px;
+}
+
+.button {
+  align-self: flex-end;
+  margin-top: 22px;
+  margin-right: -87px;
+  margin-bottom: 37px;
+  padding: 14px 60px 17px 59px;
+}
+
+@media screen and (max-width: 600px) {
+  .blocks {
+    width: 86.25%;
+  }
+  .purple-block {
+    padding: 11px 6px 13px 21px;
+  }
+  .block p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .green-block {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .page-3 .heading {
+    margin-bottom: 27px;
+  }
+  .button {
+    margin-top: 19px;
+    margin-bottom: 140px;
+    margin-right: unset;
+    align-self: unset;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .footer-text {
+    font-size: 6px;
+    line-height: 8px;
+  }
+  .footer-code {
+    font-size: 6px;
+    line-height: 8px;
+  }
+}

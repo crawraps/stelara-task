@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   overflow: hidden;
+  position: relative;
   aspect-ratio: 960 / 540;
 }
 
@@ -21,6 +22,8 @@
     overflow: hidden;
     width: 183px !important;
     height: 183px;
+    top: unset;
+    right: unset;
     border-radius: 50%;
   }
 }

@@ -21,7 +21,6 @@
   color: #532f88;
 }
 .blocks {
-  height: 65.66%;
   width: 100%;
   display: flex;
 }
@@ -52,7 +51,7 @@
   font-weight: 400;
 }
 .block-1 {
-  padding: 15px 7px 28px 13px;
+  padding: 0 7px 13px 13px;
   margin-right: 9px;
 }
 .block-2 {
@@ -82,8 +81,8 @@
     align-items: center;
   }
   .image {
-    top: 94px;
-    left: 66px;
+    top: 94px !important;
+    left: 66px !important;
   }
   .page-1 h1 {
     width: 86.25%;

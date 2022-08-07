@@ -1,0 +1,79 @@
+.page4 .quiz {
+  width: 58.75%;
+}
+
+.page4 .heading {
+  margin: 22px 13px 40px 13px;
+  padding: 15px 31px 14px 37px;
+}
+
+.page4 .answer {
+  margin: 10px 59px 10px 19px;
+}
+
+.page4 .button {
+  margin-top: 30px;
+}
+
+.footer-text {
+  margin-left: 19px;
+  margin-bottom: 18px;
+  width: 57.92%;
+}
+.footer-code {
+  margin-bottom: 11px;
+  margin-right: 5px;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .page4 .quiz {
+    width: 100%;
+    padding: 0 24px 0 22px;
+  }
+
+  .page4 .image {
+    right: 68px;
+    top: 22px;
+  }
+
+  .page4 .heading {
+    margin: 215px 0 5px 0;
+    font-weight: 600;
+    width: 276px;
+    padding: 10px 12px 9px 12px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .page4 .answer {
+    margin: 7px 0 7px;
+    font-size: 12px;
+    line-height: 14px;
+    justify-content: center;
+    padding-left: 23px;
+  }
+
+  .page4 .button {
+    margin-top: 14px;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 10px 40px 84px 41px;
+  }
+
+  .footer-text {
+    margin-left: 18px;
+    margin-bottom: 43px;
+    font-size: 6px;
+    line-height: 8px;
+    width: 58.75%;
+  }
+
+  .footer-code {
+    color: #838383;
+    font-size: 6px;
+    line-height: 8px;
+    margin-right: 21px;
+    margin-bottom: 60px;
+  }
+}

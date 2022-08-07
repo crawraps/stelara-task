@@ -5,7 +5,7 @@ import { useClass } from 'components/Tablet'
 import styles from './page1.module.css'
 import List from 'components/elements/list/List'
 import ListItem from 'components/elements/list/ListItem'
-import Page from '../image/Page'
+import Page from '../page/Page'
 
 export interface PageProps {
   next(): void

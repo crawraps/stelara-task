@@ -40,7 +40,11 @@ export default function Quiz(props: Props): JSX.Element {
     props.setAns(
       choosed.map((c, i) => (c ? i : null)).filter(c => !c) as number[]
     )
-    props.next()
+    if (choosedDefault.every(item => !item)) {
+      setTimeout(() => props.next(), 500)
+    } else {
+      props.next()
+    }
   }
 
   const [isMobile, setIsMobile] = React.useState(window.innerWidth < 600)

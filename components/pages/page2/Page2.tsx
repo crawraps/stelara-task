@@ -1,4 +1,4 @@
-import Page from '../image/Page'
+import Page from '../page/Page'
 import { PageProps } from '../page1/Page1'
 import image from '../../../assets/wooman-1.png'
 import styles from './page2.module.css'
@@ -6,12 +6,16 @@ import { quiz } from 'components/Tablet'
 import Quiz from 'components/elements/Quiz/Quiz'
 import Footer from 'components/elements/footer/Footer'
 
-interface Props extends PageProps {
+export interface QuizPageProps extends PageProps {
   answers: number[]
   setAns(ans: number[]): void
 }
 
-export default function Page2({ answers, setAns, next }: Props): JSX.Element {
+export default function Page2({
+  answers,
+  setAns,
+  next,
+}: QuizPageProps): JSX.Element {
   return (
     <Page
       image
