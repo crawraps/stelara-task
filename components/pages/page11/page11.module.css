@@ -1,5 +1,5 @@
 .page-11 {
-  padding: 1.1875rem 1.4375rem 0.0rem 1.375rem;
+  padding: 1.1875rem 1.4375rem 0rem 1.375rem;
   flex-direction: column;
 }
 
@@ -9,7 +9,7 @@
   line-height: 1.5rem;
   text-transform: uppercase;
   color: #4f0b7b;
-  margin: 0 0 1.0rem 0;
+  margin: 0 0 1rem 0;
 }
 
 .heading {
@@ -23,7 +23,7 @@
   background: #532f88;
   border-radius: 0.625rem;
   font-weight: 600;
-  font-size: 1.0rem;
+  font-size: 1rem;
   line-height: 1.25rem;
   text-transform: uppercase;
   color: #ffffff;
@@ -42,7 +42,7 @@
   flex-direction: column;
   font-weight: 400;
   font-size: 0.8125rem;
-  line-height: 1.0rem;
+  line-height: 1rem;
   color: #532f88;
 }
 
@@ -107,6 +107,8 @@
 
 .icon {
   margin-right: 0.625rem;
+  width: 2.9375rem;
+  height: 2.9375rem;
 }
 
 .block p {
@@ -116,7 +118,7 @@
   margin-top: 0.875rem;
   font-weight: 400;
   font-size: 0.8125rem;
-  line-height: 1.0rem;
+  line-height: 1rem;
 
   color: #532f88;
 }
