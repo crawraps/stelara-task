@@ -3,31 +3,31 @@
 }
 
 .page12 .heading {
-  margin: 18px 8px 32px 26px;
-  padding: 15px 48px 15px 34px;
+  margin: 1.125rem 0.5rem 2.0rem 1.625rem;
+  padding: 0.9375rem 3.0rem 0.9375rem 2.125rem;
 }
 
 .page12 .answer {
-  padding-left: 60px;
-  padding-right: 60px;
-  margin: 10px 0;
-  margin-left: 47px;
-  margin-right: 37px;
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
+  margin: 0.625rem 0;
+  margin-left: 2.9375rem;
+  margin-right: 2.3125rem;
 }
 
 .page12 .button {
-  margin-top: 32px;
-  padding: 16px 40px 15px 47px;
+  margin-top: 2.0rem;
+  padding: 1.0rem 2.5rem 0.9375rem 2.9375rem;
 }
 
 .footer-text {
-  margin-left: 22px;
-  margin-bottom: 4px;
+  margin-left: 1.375rem;
+  margin-bottom: 0.25rem;
   width: 51.04%;
 }
 .footer-code {
-  margin-bottom: 11px;
-  margin-right: 5px;
+  margin-bottom: 0.6875rem;
+  margin-right: 0.3125rem;
   color: white;
 }
 

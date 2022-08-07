@@ -1,28 +1,28 @@
 .page2 .quiz {
   width: 59.9%;
-  padding: 16px 29px 0 12px;
+  padding: 1rem 0.125rem 0 0.75rem;
 }
 
 .page2 .heading {
-  padding: 13px 53px;
-  margin-bottom: 74px;
+  padding: 0.8125rem;
+  margin-bottom: 4.625rem;
 }
 
 .page2 .answer {
-  margin: 14px 0;
+  margin: 0.875rem 0;
 }
 
 .page2 .button {
-  margin-top: 28px;
+  margin-top: 1.75rem;
 }
 
 .page2 .footer-text {
-  margin-left: 33px;
-  margin-bottom: 9px;
+  margin-left: 2.0625rem;
+  margin-bottom: 0.5625rem;
 }
 .page2 .footer-code {
-  margin-right: 9px;
-  margin-bottom: 9px;
+  margin-right: 0.5625rem;
+  margin-bottom: 0.5625rem;
 }
 
 @media screen and (max-width: 600px) {

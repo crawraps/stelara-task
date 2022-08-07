@@ -28,15 +28,6 @@ export default function Page8(props: PageProps): JSX.Element {
   mobileCells[1] = desktopCells[2]
   mobileCells[2] = desktopCells[1]
 
-  const [isMobile, setIsMobile] = React.useState(window.innerWidth < 600)
-  const winodwResizeHandler = () => {
-    setIsMobile(window.innerWidth < 600)
-  }
-  React.useEffect(() => {
-    window.addEventListener('resize', winodwResizeHandler)
-    return () => window.removeEventListener('resize', winodwResizeHandler)
-  })
-
   const blocks = [
     {
       heading: `
@@ -80,7 +71,7 @@ export default function Page8(props: PageProps): JSX.Element {
         <div
           className={getClass(`table block ${isTableShowed ? '' : 'hidden'}`)}
         >
-          {(isMobile ? mobileCells : desktopCells).map((text, index) => (
+          {(props.isMobile ? mobileCells : desktopCells).map((text, index) => (
             <div
               className={getClass(
                 `cell ${index === 4 || index === 5 ? 'wide' : ''}`
@@ -93,7 +84,7 @@ export default function Page8(props: PageProps): JSX.Element {
               <span className={styles.text}>{text}</span>
             </div>
           ))}
-          {isMobile ? (
+          {props.isMobile ? (
             <button className={getClass(`table-button`)} onClick={toggleTable}>
               <FlatArrow
                 className={getClass(`${isTableShowed ? 'reverse' : ''}`)}
@@ -108,7 +99,7 @@ export default function Page8(props: PageProps): JSX.Element {
                 <Image src={excl} height={40} width={9.82} />
               </span>
               <h1>{item.heading}</h1>
-              {isMobile ? (
+              {props.isMobile ? (
                 <button
                   className={getClass(`block-button`)}
                   onClick={() => toggleBlockHidden(index)}

@@ -12,15 +12,6 @@ import ArrowDown from '/assets/arrow-down.svg'
 export default function Page13(props: PageProps): JSX.Element {
   const getClass = useClass(styles)
 
-  const [isMobile, setIsMobile] = React.useState(window.innerWidth < 600)
-  const winodwResizeHandler = () => {
-    setIsMobile(window.innerWidth < 600)
-  }
-  React.useEffect(() => {
-    window.addEventListener('resize', winodwResizeHandler)
-    return () => window.removeEventListener('resize', winodwResizeHandler)
-  })
-
   const [isBlocksHidden, setIsBlocksHidden] = React.useState([true, true, true])
   const toggleBlockHidden = (index: number) => {
     setIsBlocksHidden(
@@ -36,7 +27,7 @@ export default function Page13(props: PageProps): JSX.Element {
       <h1 className={getClass('heading')}>
         КАКАЯ СТРАТЕГИЯ ЛУЧШЕ ПРИ НЕЭФФЕКТИВНОСТИ ПЕРВОГО иФНО-α
       </h1>
-      {isMobile ? (
+      {props.isMobile ? (
         <ArrowDown className={getClass('down')} />
       ) : (
         <div className={getClass('arrows')}>
@@ -48,7 +39,7 @@ export default function Page13(props: PageProps): JSX.Element {
         <div className={getClass(`purple-block`)}>
           <div className={getClass('block-heading')}>
             <h3>Переключение на другой иФНО-α или устекинумаб при БК?</h3>
-            {isMobile ? (
+            {props.isMobile ? (
               <button
                 className={getClass(`block-button`)}
                 onClick={() => toggleBlockHidden(0)}
@@ -70,7 +61,7 @@ export default function Page13(props: PageProps): JSX.Element {
         <div className={getClass(`purple-block`)}>
           <div className={getClass('block-heading')}>
             <h3>Переключение на устекинумаб или ведолизумаб при БК?</h3>
-            {isMobile ? (
+            {props.isMobile ? (
               <button
                 className={getClass(`block-button`)}
                 onClick={() => toggleBlockHidden(1)}
@@ -99,7 +90,7 @@ export default function Page13(props: PageProps): JSX.Element {
             потере эффективности на первый иФНО-α расширяет возможности терапии
             в сравнении с переключением на другой иФНО-α2–4
           </p>
-          {isMobile ? (
+          {props.isMobile ? (
             <button
               className={getClass(`block-button`)}
               onClick={() => toggleBlockHidden(2)}
@@ -112,7 +103,11 @@ export default function Page13(props: PageProps): JSX.Element {
         </div>
       </div>
 
-      <Button title='далее' className={getClass('button')} />
+      <Button
+        title='далее'
+        className={getClass('button')}
+        onClick={props.next}
+      />
 
       <Footer
         codeClass={getClass('footer-code')}

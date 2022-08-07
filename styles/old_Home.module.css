@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 82.5rem;
+  width: 1320px;
   margin: auto;
 }
 
 .heading {
-  margin: 3.0625rem auto 4.8125rem;
+  margin: 49px auto 77px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,8 +19,8 @@
 
 .heading-h h1 {
   font-weight: 500;
-  font-size: 3.125rem;
-  margin: 0 0 3.375rem 0;
+  font-size: 50px;
+  margin: 0 0 54px 0;
   line-height: 138.9%;
   text-transform: uppercase;
   color: #532f88;
@@ -28,7 +28,7 @@
 
 .heading-h hr {
   width: 94%;
-  border-top: 0.1875rem solid #44babe;
+  border-top: 3px solid #44babe;
   margin: 0;
   color: transparent;
 }
@@ -37,10 +37,10 @@
   font-weight: 600;
   width: 93%;
   line-height: 138.9%;
-  font-size: 1.375rem;
+  font-size: 22px;
   color: #532f88;
   margin: 0;
-  margin-top: 1.6875rem;
+  margin-top: 27px;
 }
 
 @media screen and (max-width: 1400px) {

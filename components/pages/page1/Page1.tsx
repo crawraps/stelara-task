@@ -10,6 +10,7 @@ import Page from '../page/Page'
 export interface PageProps {
   next(): void
   getGlobClass(name: string): string
+  isMobile: boolean
 }
 
 export default function Page1({ next, getGlobClass }: PageProps) {

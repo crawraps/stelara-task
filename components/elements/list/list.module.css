@@ -1,10 +1,10 @@
 .list {
   display: none;
   background-color: #eae2f4;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   overflow: hidden;
-  margin-bottom: 29px;
-  width: 275px;
+  margin-bottom: 1.8125rem;
+  width: 17.1875rem;
 }
 
 .item {
@@ -13,20 +13,20 @@
 }
 
 .arrow {
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 .heading {
   display: flex;
   cursor: pointer;
   align-items: center;
-  padding: 0 15px;
+  padding: 0 0.9375rem;
 }
 
 .heading h3 {
   font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
   text-transform: uppercase;
   color: #955dc6;
 }
@@ -34,22 +34,22 @@
 .heading h4 {
   margin: 0;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0.875rem;
+  line-height: 1rem;
   color: #532f88;
   margin-left: auto;
 }
 
 .body {
-  padding: 0 17px;
+  padding: 0 1.0625rem;
   height: fit-content;
-  max-height: 0px;
+  max-height: 0rem;
   overflow: hidden;
 }
 
 .showed {
-  max-height: 10000px;
-  padding: 0 17px 20px;
+  max-height: 625rem;
+  padding: 0 1.0625rem 20rem;
 }
 
 @media screen and (max-width: 600px) {

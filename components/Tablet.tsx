@@ -16,6 +16,10 @@ import Page8 from './pages/page8/Page8'
 import Page9 from './pages/page9/Page9'
 import Page11 from './pages/page11/Page11'
 import Page13 from './pages/page13/Page13'
+import Page14 from './pages/page14/Page14'
+import Page15 from './pages/page15/Page15'
+import Page16 from './pages/page16/Page16'
+import Page17 from './pages/page17/Page17'
 
 export default function Tablet(): JSX.Element {
   const [currentPage, setCurrentPage] = React.useState<number>(0)
@@ -32,7 +36,16 @@ export default function Tablet(): JSX.Element {
     setCurrentPage(currentPage - 1)
   }
 
-  const pageAttrs = { getGlobClass, next: nextPage }
+  const [isMobile, setIsMobile] = React.useState(false)
+  const winodwResizeHandler = () => {
+    setIsMobile(window.innerWidth < 600)
+  }
+  React.useEffect(() => {
+    window.addEventListener('resize', winodwResizeHandler)
+    return () => window.removeEventListener('resize', winodwResizeHandler)
+  })
+
+  const pageAttrs = { getGlobClass, next: nextPage, isMobile }
 
   const [answers, setAnswers] = React.useState<number[][]>(
     Array(quiz.length).fill([])
@@ -61,6 +74,10 @@ export default function Tablet(): JSX.Element {
     <Page11 {...pageAttrs} />,
     <Page12 {...pageAttrs} answers={answers[4]} setAns={changeAnswers(4)} />,
     <Page13 {...pageAttrs} />,
+    <Page14 {...pageAttrs} />,
+    <Page15 {...pageAttrs} />,
+    <Page16 />,
+    <Page17 {...pageAttrs} />,
   ]
 
   return (

@@ -8,9 +8,9 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  border-radius: 15px;
-  padding: 17px 60px;
+  font-size: 1.125rem;
+  border-radius: 0.9375rem;
+  padding: 1.0625rem 3.75rem;
   border: none;
   cursor: pointer;
 }

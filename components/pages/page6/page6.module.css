@@ -2,57 +2,57 @@
   width: 57.71%;
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  padding-left: 1.25rem;
   align-items: center;
 }
 
 .page-6 .heading {
-  margin-top: 21px;
-  padding: 9px 57px 12px;
+  margin-top: 1.3125rem;
+  padding: 0.5625rem 3.5625rem 0.75rem;
   width: 100%;
-  margin-bottom: 64px;
+  margin-bottom: 4rem;
 }
 
 .content p {
   background: #cdebec;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   width: 95.13%;
   font-style: italic;
   color: #532f88;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   position: relative;
-  line-height: 24px;
-  padding: 12px 4px 24px 20px;
+  line-height: 1.5rem;
+  padding: 0.75rem 0.25rem 1.5rem 1.25rem;
   align-self: flex-end;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 2.25rem;
 }
 
 .content p::before {
   content: '';
   display: block;
-  width: 81px;
-  height: 64px;
+  width: 5.0625rem;
+  height: 4rem;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url('../../../assets/comment.png');
   position: absolute;
-  right: 34px;
-  bottom: -82px;
-  width: 80px;
-  height: 93px;
+  right: 2.125rem;
+  bottom: -5.125rem;
+  width: 5rem;
+  height: 5.8125rem;
 }
 
 .button {
-  padding: 18px 41px 19px;
+  padding: 1.125rem 2.5625rem 1.1875rem;
   width: fit-content;
 }
 
 .footer-text {
-  margin-left: 33px;
-  margin-bottom: 9px;
-  font-size: 12px;
+  margin-left: 2.0625rem;
+  margin-bottom: 0.5625rem;
+  font-size: 0.75rem;
 }
 .footer-code {
   display: none;

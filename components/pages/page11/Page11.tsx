@@ -33,15 +33,6 @@ export default function Page11(props: PageProps): JSX.Element {
     },
   ]
 
-  const [isMobile, setIsMobile] = React.useState(window.innerWidth < 600)
-  const winodwResizeHandler = () => {
-    setIsMobile(window.innerWidth < 600)
-  }
-  React.useEffect(() => {
-    window.addEventListener('resize', winodwResizeHandler)
-    return () => window.removeEventListener('resize', winodwResizeHandler)
-  })
-
   const [isTableShowed, setIsTableShowed] = React.useState(false)
   const toggleTable = () => {
     setIsTableShowed(!isTableShowed)
@@ -79,7 +70,7 @@ export default function Page11(props: PageProps): JSX.Element {
               <span className={styles.text}>{text}</span>
             </div>
           ))}
-          {isMobile ? (
+          {props.isMobile ? (
             <button className={getClass(`table-button`)} onClick={toggleTable}>
               <FlatArrow
                 className={getClass(`${isTableShowed ? 'reverse' : ''}`)}
@@ -95,7 +86,7 @@ export default function Page11(props: PageProps): JSX.Element {
                 <Image src={cellImage} />
               </span>
               <h1>{item.heading}</h1>
-              {isMobile ? (
+              {props.isMobile ? (
                 <button
                   className={getClass(`block-button`)}
                   onClick={() => toggleBlockHidden(index)}

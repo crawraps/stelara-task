@@ -5,26 +5,26 @@
 
 .heading {
   font-weight: 600;
-  font-size: 1.125rem;
-  line-height: 1.375rem;
+  font-size: 18px;
+  line-height: 22px;
   display: block;
   color: #ffffff;
   background: #532f88;
-  border-radius: 0.4375rem;
-  padding: 0.3125rem 1.1875rem;
+  border-radius: 7px;
+  padding: 5px 19px;
   margin: 0;
 }
 
 .purple-block {
   background-color: #eae2f4;
-  border-radius: 0.9375rem;
+  border-radius: 15px;
 }
 .purple-block ul {
   list-style: none;
   padding-left: 1.2rem;
   font-weight: 400;
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
+  font-size: 15px;
+  line-height: 18px;
   color: #532f88;
 }
 .purple-block li::before {
@@ -35,17 +35,17 @@
 }
 .purple-block p {
   font-weight: 400;
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
+  font-size: 15px;
+  line-height: 18px;
   color: #532f88;
 }
 
 .green-block {
   background: #03b7bf;
-  border-radius: 0.9375rem;
+  border-radius: 15px;
   font-weight: 700;
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
+  font-size: 15px;
+  line-height: 18px;
   color: #ffffff;
 }
 

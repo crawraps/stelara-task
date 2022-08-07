@@ -6,7 +6,7 @@ import Quiz from 'components/elements/Quiz/Quiz'
 import { quiz } from 'components/Tablet'
 import Footer from 'components/elements/footer/Footer'
 
-export default function Page7(props: QuizPageProps): JSX.Element {
+export default function Page12(props: QuizPageProps): JSX.Element {
   return (
     <Page
       image

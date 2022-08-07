@@ -10,15 +10,6 @@ import Footer from 'components/elements/footer/Footer'
 export default function Page9(props: PageProps): JSX.Element {
   const getClass = useClass(styles)
 
-  const [isMobile, setIsMobile] = React.useState(window.innerWidth < 600)
-  const winodwResizeHandler = () => {
-    setIsMobile(window.innerWidth < 600)
-  }
-  React.useEffect(() => {
-    window.addEventListener('resize', winodwResizeHandler)
-    return () => window.removeEventListener('resize', winodwResizeHandler)
-  })
-
   const [isBlocksHidden, setIsBlocksHidden] = React.useState([true, true])
   const toggleBlockHidden = (index: number) => {
     setIsBlocksHidden(
@@ -46,7 +37,7 @@ export default function Page9(props: PageProps): JSX.Element {
                 (ведолизумаб)
                 `}
             </h1>
-            {isMobile ? (
+            {props.isMobile ? (
               <button
                 className={getClass(`block-button`)}
                 onClick={() => toggleBlockHidden(0)}
@@ -91,7 +82,7 @@ export default function Page9(props: PageProps): JSX.Element {
                     Терапия препаратом класса ингибиторы янус-киназ (тофацитиниб)
                 `}
             </h1>
-            {isMobile ? (
+            {props.isMobile ? (
               <button
                 className={getClass(`block-button`)}
                 onClick={() => toggleBlockHidden(1)}
