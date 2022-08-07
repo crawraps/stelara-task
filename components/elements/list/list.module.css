@@ -49,7 +49,11 @@
 
 .showed {
   max-height: 625rem;
-  padding: 0 1.0625rem 20rem;
+  padding: 0 1.0625rem 0.5rem;
+}
+
+.reversed {
+  transform: scale(-1, -1);
 }
 
 @media screen and (max-width: 600px) {

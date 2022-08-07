@@ -21,7 +21,7 @@ export default function ListItem({
   return (
     <div className={getClass('item')}>
       <div onClick={toggleShowed} className={getClass('heading')}>
-        <Arrow className={getClass('arrow')} />
+        <Arrow className={getClass(`arrow ${showed ? 'reversed' : ''}`)} />
         <h3>{title}</h3>
         {subtitle ? <h4>{subtitle}</h4> : null}
       </div>
